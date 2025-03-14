@@ -1,0 +1,145 @@
+.crossword-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.crossword-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.score {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c5282;
+}
+
+.crossword-content {
+  display: grid;
+  grid-template-columns: auto 300px;
+  gap: 2rem;
+}
+
+.crossword-grid {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.crossword-row {
+  display: flex;
+}
+
+.crossword-cell {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.crossword-cell.active {
+  background: white;
+  cursor: pointer;
+}
+
+.crossword-cell.inactive {
+  background: #333;
+}
+
+.crossword-cell.selected {
+  background: #e3f2fd;
+}
+
+.cell-number {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 0.7rem;
+  color: #666;
+}
+
+.clues-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.clues-section {
+  margin-bottom: 2rem;
+}
+
+.clues-section h3 {
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.clue {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.clue-number {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.crossword-controls {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.submit-button,
+.new-puzzle-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.new-puzzle-button {
+  background-color: #2196F3;
+  color: white;
+}
+
+.new-puzzle-button:hover {
+  background-color: #1e88e5;
+}
+
+@media (max-width: 1024px) {
+  .crossword-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .crossword-cell {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+} 

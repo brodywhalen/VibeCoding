@@ -1,0 +1,96 @@
+.contact-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.contact-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.profile-section {
+  display: flex;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+  gap: 2rem;
+  align-items: center;
+}
+
+.profile-image {
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(45deg, #2196F3, #3F51B5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.profile-info {
+  flex-grow: 1;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+.title {
+  color: #666;
+  font-size: 1.2rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.contact-details {
+  color: #555;
+}
+
+.contact-details p {
+  margin: 0.5rem 0;
+}
+
+.bio-section {
+  padding: 2rem;
+}
+
+.bio-section h3 {
+  color: #333;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.bio-section p {
+  color: #555;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-details {
+    text-align: left;
+  }
+
+  .avatar {
+    width: 120px;
+    height: 120px;
+    font-size: 2.5rem;
+  }
+} 

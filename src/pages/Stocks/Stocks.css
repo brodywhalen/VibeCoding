@@ -1,0 +1,175 @@
+.stocks-container {
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.stocks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.stocks-header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.search-input {
+  padding: 0.8rem 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 300px;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.stocks-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+}
+
+.stocks-list {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  position: sticky;
+  top: 2rem;
+}
+
+.stocks-list h3 {
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.stock-item {
+  margin-bottom: 0.5rem;
+}
+
+.stock-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.stock-label {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.stocks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.stock-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stock-header {
+  margin-bottom: 1rem;
+}
+
+.stock-header h3 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.stock-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c5282;
+}
+
+.stock-change {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.stock-chart {
+  height: 200px;
+}
+
+.positive {
+  color: #48bb78;
+}
+
+.negative {
+  color: #e53e3e;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+  font-size: 1.2rem;
+  grid-column: 1 / -1;
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+  color: #e53e3e;
+  background-color: #fff5f5;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  grid-column: 1 / -1;
+}
+
+.disclaimer {
+  margin-top: 2rem;
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.stock-details {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.stock-details p {
+  margin: 0.5rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .stocks-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .stocks-list {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .stocks-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .stocks-grid {
+    grid-template-columns: 1fr;
+  }
+} 

@@ -1,0 +1,39 @@
+.hangman-container {
+  text-align: center;
+}
+
+.word {
+  font-size: 2rem;
+  margin: 20px 0;
+  letter-spacing: 10px;
+}
+
+.letter {
+  transition: color 0.3s ease;
+}
+
+.letter.correct {
+  color: green;
+  animation: flash 0.5s ease-in-out;
+}
+
+@keyframes flash {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.alphabet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.alphabet button {
+  margin: 5px;
+}
+
+canvas {
+  border: 1px solid black; /* Optional: Add a border to the canvas */
+} 
